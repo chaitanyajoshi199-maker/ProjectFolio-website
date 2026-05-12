@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional NavBar</title>
+  <link rel="stylesheet" href="officeNavbar.css" />
+</head>
+
+<body>
+  <nav>
+    <ul class="nav1" onclick="HideNav()">
+      <li><a href="" class="title">BroCode!</a></li>
+      <li class="MobileView"><a href="#">Home</a></li>
+      <li class="MobileView"><a href="#">Product</a></li>
+      <li class="MobileView"><a href="#">Service</a></li>
+      <li class="MobileView"><a href="#">About</a></li>
+      <li class="MobileView"><a href="#">Contact</a></li>
+      <li onclick="DisplaySidebar()">
+        <a href="#"><img src="../Media/hamburgerWhite.png" alt="" width="45px" /></a>
+      </li>
+    </ul>
+
+    <ul class="sidebar">
+      <li>
+        <a class="cross" href=""><img src="../Media/cross.png" alt="" width="25px" /> </a>
+      </li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Product</a></li>
+      <li><a href="#">Service</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function DisplaySidebar() {
+      const sidebar = document.querySelector(".sidebar")
+      sidebar.style.display = "flex";
+    }
+    function CloseSidebar() {
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none';
+    }
+    function HideNav() {
+      const navbar = document.querySelector('.sidebar')
+      const sidebar = document.querySelector('.nav1')
+      if (navbar.style.display = 'block') {
+        sidebar.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+
+</html>

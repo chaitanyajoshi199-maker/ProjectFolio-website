@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms 2</title>
+    <style>
+        body {
+            font-family: arial;
+        }
+
+        .form {
+            margin: auto;
+            width: 500px;
+            border: 3px rgb(0, 37, 116) solid;
+            border-radius: 20px;
+            padding: 20px 20px;
+            background-color: rgb(0, 187, 255);
+        }
+        label{
+            color: rgb(0, 45, 100);
+        }
+
+        input,
+        select,
+        textarea {
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+        .title{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">REGISTRATION FORM</div>
+
+    <div class="form">
+        <form action="">
+            <center>
+                <label for="name">STUDENT NAME:</label>
+                <input type="text" name="name" id="" maxlength="50" placeholder="Enter Your Name"> <br> <br>
+
+                <label for="name">FATHER NAME:</label>
+                <input type="text" name="name" id="" maxlength="50" placeholder="Enter Father's Name"> <br> <br>
+
+
+                <label for="no">MOBILE NO:</label>
+                <input type="number" name="no" id=""> <br> <br>
+
+
+                <label for="dob">DATE OF BIRTH:</label>
+                <input type="date" name="dob" id=""> <br> <br>
+
+
+                <label for="email">EMAIL:</label>
+                <input type="email" name="email" id=""> <br> <br>
+
+
+                <label for="password">PASSWORD:</label>
+                <input type="password" name="password" id=""> <br> <br>
+
+                <label for="gender">GENDER:</label>
+                <input type="radio" name="gender">MALE
+                <input type="radio" name="gender">FEMALE <br><br>
+
+                <label for="dept">DEPARTMENT:</label>
+                CSF <input type="checkbox" name="dept" id="">
+                IT<input type="checkbox" name="dept" id="">
+                ECE<input type="checkbox" name="dept" id="">
+                CIVIL<input type="checkbox" name="dept" id="">
+
+                <br><br>
+
+                <label for="course">COURSE:</label>
+
+                <select name="course" id="">
+                    <option value="">C</option>
+                    <option value="">C++</option>
+                    <option value="">Java</option>
+                </select>
+                <br><br>
+
+                <label for="photo">STUDENT PHOTO:</label> <br>
+                <img src="../Media/myImg.jpg" alt="student photo" width="100px" height="100px">
+
+                <br><br>
+
+                <label for="city">CITY:</label>
+                <select name="city" id="">
+                    <option value="">Sawantawadi</option>
+                    <option value="">Kudal</option>
+                    <option value="">Kankavli</option>
+                    <option value="">Malvan</option>
+                </select>
+
+                <br> <br>
+
+                <label for="address">ADDRESS:</label>
+                <textarea name="address" id=""></textarea>
+
+                <br><br>
+                <label for="button"></label>
+                <input type="submit" name="button" id="">
+
+
+            </center>
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>

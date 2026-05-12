@@ -1,0 +1,189 @@
+.project-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 43, 111, 0.435),
+    rgba(0, 93, 140, 0.3)
+  );
+  padding: clamp(1rem, 2vw, 1.5rem);
+  border-radius: 2rem;
+  border: 3px rgba(255, 255, 255, 0.1) solid;
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+.project-block:hover {
+  border: 3px white solid;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 60, 140, 0.5) 0%,
+    rgba(0, 80, 160, 0.4) 100%
+  );
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 106, 255, 0.3);
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: clamp(5px, 2vw, 10px);
+  gap: 10px;
+}
+.head-left {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  gap: clamp(5px, 1.5vw, 10px);
+}
+.project-serial-number {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-weight: bold;
+  color: rgba(79, 202, 255, 0.8);
+  flex-shrink: 0;
+}
+.project-block-title {
+  font-size: clamp(0.9rem, 2.5vw, 1.5rem);
+  margin: 0;
+  font-weight: bold;
+  max-width: 100%;
+}
+.head-right {
+  display: flex;
+  /* align-items: end; */
+  flex-shrink: 0;
+}
+.show-button {
+  color: white;
+
+  padding: clamp(6px, 10px, 10px);
+  padding-top: clamp(6px, 8px, 12px);
+  padding-bottom: clamp(6px, 8px, 12px);
+  border: 2px rgb(255, 255, 255) solid;
+  border-radius: clamp(12px, 1.3vw, 15px);
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 103, 220), black);
+  cursor: pointer;
+  font-size: clamp(8px, 15px, 20px);
+  /* font-weight: 500; */
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.show-button:hover {
+  background: linear-gradient(
+    90deg,
+    rgb(0, 103, 220),
+    rgb(0, 0, 0),
+    rgb(0, 103, 220)
+  );
+  border-color: rgba(0, 150, 255, 0.5);
+  transform: scale(1.05);
+}
+.show-button:active {
+  transform: scale(0.95);
+}
+/* .show-button:disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+} */
+
+.bottom {
+  height: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  min-height: clamp(150px, 40vw, 300px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .project-block {
+    max-width: 100%;
+    padding: 1rem;
+    margin: 0;
+  }
+  /* .head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .head-right {
+    width: 100%;
+  }
+  .show-button {
+    width: 100%;
+    padding: 8px 12px;
+  } */
+
+  .show-button {
+    width: 100%;
+    padding: 6px 9px;
+    font-size: 12px;
+  }
+  .project-block-title {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+  .bottom {
+    min-height: 180px;
+    max-height: 250px;
+  }
+}
+
+/* tablets  */
+@media (min-width: 481px) {
+  .project-block {
+    max-width: 100%;
+  }
+  .bottom {
+    min-height: 220px;
+    max-height: 280px;
+  }
+  .show-button {
+    width: 100%;
+    padding: 8px 11px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 787px) {
+  .project-block {
+    max-width: 80%;
+  }
+}
+
+/* lg screen laptops  */
+@media (min-width: 1025px) {
+  .project-block {
+    max-width: 100%;
+  }
+  .bottom {
+    max-height: clamp(250px, 350px, 350px);
+  }
+  .show-button {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .project-block {
+    max-width: 100%;
+    /* min-width: 400px;
+    min-height: 350px; */
+  }
+    .show-button {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+}

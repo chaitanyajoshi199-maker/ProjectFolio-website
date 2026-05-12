@@ -1,0 +1,31 @@
+.project-title {
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(10px 3vw, 20px);
+  margin-bottom: clamp(10px, 3vw, 10px);
+  cursor: default;
+  transition: text-shadow 0.05s ease;
+  text-shadow: 0 0 10px rgb(0, 26, 66);
+  padding: 0 1rem;
+  word-break: break-word;
+}
+.project-title:hover {
+  text-shadow: 0 0 8px white;
+}
+
+/* mobile  */
+@media (max-width: 480px) {
+  .project-title {
+    font-size: 2rem;
+    margin-top: 10px;
+  }
+}
+
+/* tablet  */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .project-title {
+    font-size: 2.8rem;
+    margin-top: 10px;
+  }
+}
