@@ -1,6 +1,7 @@
 <h4>
-This Repo contains the "ProjectFolio website" (The website contains multiple project to showcase). 
-In this website in which I have showcased my all projects which I have done during my Web Development sourse in the Maaya Institute.
+This Repo contains the "ProjectFolio website" (A projects showcasing website). 
+  
+In this website, I have showcased, my all projects which I had done during my Web Development course in the Maaya Institute.
 
 <h5>Includes Projects of:</h5>
 
